@@ -1,0 +1,125 @@
+.carousel{
+    width: 100%;
+    padding: 0 15%;
+
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+
+    background: #631694;
+    border-radius: 35.67px;
+
+    position: relative;
+}
+
+
+
+
+.carousel__text{
+    padding: 47px 0 40px 0;
+    
+}
+.carousel__text>h1{
+    width: 80%;
+    background-color: blue;
+    margin: 0 auto;
+    font-size: 36.62px;
+    font-weight: 600;
+    line-height: 48.06px;
+    text-align: center;
+    color: white;
+}
+
+
+
+.carousel__wrap{
+    width: 100%;
+    margin: 0 10%;
+    display: flex;
+    gap: 5%;
+}
+
+
+
+
+.carousel__card{
+    min-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30.83px;
+
+}
+
+
+
+
+.carousel__card__imgWrapper{
+    width: 100px;
+}
+
+.carousel__card__img{
+    width: 100%;
+}
+
+
+
+.carousel__card__info{
+    padding-left: 46px;
+}
+
+.carousel__card__typeOf{
+    margin-top: 27px;
+}
+
+.carousel__card__typeOf>p{
+    font-size: 15.95px;
+    font-weight: 500;
+    line-height: 28.49px;
+    color: #363535;    
+}
+
+.carousel__card__text{
+    margin-top: 34px;
+}
+
+.carousel__card__text>h1{
+    font-size: 34.44px;
+    font-weight: 600;
+    line-height: 61.55px;
+}
+
+
+.carousel__card__term{
+    margin: 95px 0 16px 0;
+    display: flex;
+    gap: 5px;
+}
+
+.carousel__card__term>span{
+    font-size: 15.3px;
+    font-weight: 500;
+    line-height: 20.23px;
+    text-align: left;
+    
+}
+
+
+
+.carousel_backgroundGradient1{
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(229, 216, 237, 0.0510769) 16.6%, rgba(204, 179, 220, 0.1) 32.5%, rgba(174, 134, 199, 0.1) 52.1%, #631694 100%);
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.carousel_backgroundGradient2{
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(229, 216, 237, 0.0510769) 16.6%, rgba(204, 179, 220, 0.1) 32.5%, rgba(174, 134, 199, 0.1) 52.1%, #631694 100%);
+    top: 0;
+    right: 0;
+    z-index: 10;
+}

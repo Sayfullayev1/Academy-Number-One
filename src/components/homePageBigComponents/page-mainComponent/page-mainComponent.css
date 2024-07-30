@@ -1,0 +1,240 @@
+.page-main{
+    width: 100%;
+    background: url("../../../photos/BackgroundImages/4766181\ 1.svg") ;
+    background-size: cover;
+}
+
+.page-main__info{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding-top: 107px;
+}
+
+.page-main__info__text{
+    width: 959px;
+    position: relative;
+}
+
+.page-main__info__text>h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 82px;
+    font-weight: 700;
+    line-height: 100.5px;
+    text-align: center;
+}
+
+.page-main__info__text>h1>span{
+    background: linear-gradient(90deg, #46086D 0%, #B852F7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    
+}
+.page-main__info__text>h1>span>div{
+    width: 236.5px;
+    height: 119px;
+    /* border: 2px solid  rgba(198, 80, 214, 0.96); 
+    transform: rotate(-4.73deg); */
+    position: absolute;
+    z-index: 3;    
+}
+.page-main__info__text>h1>span>div>img{
+    width: 100%;
+}
+
+.page-main__info__text>h1>span>div:nth-of-type(1){
+    top: 10px;
+    left: 4px;
+    z-index: -3;    
+}
+.page-main__info__text>h1>span>div:nth-of-type(2){
+    top: 7.9px;
+    right: 5px;   
+    z-index: 3;
+}
+
+
+.page-main__info__text__imgWrapper{
+    position: absolute;
+}
+.page-main__info__text__imgWrapper>img{
+    /* width: 100%; */
+}
+
+.page-main__info__text__imgWrapper:nth-of-type(1){
+    /* width: 86px; */
+    z-index: -1;
+    top: 63px;
+    left: 53px;
+}
+.page-main__info__text__imgWrapper:nth-of-type(2){
+    /* width: 28.94px; */
+    z-index: 3;
+    top: 100px;
+    left: 68px;
+}
+.page-main__info__text__imgWrapper:nth-of-type(3){
+    /* width: 105.48px; */
+    z-index: -3;
+    top: 35px;
+    right: 26px;
+}
+.page-main__info__text__imgWrapper:nth-of-type(4){
+    /* width: 14.57px; */
+    z-index: 3;
+    top: 120px;
+    right: 73px;
+}
+
+
+.page-main__info__arrowWrapper{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 20px 0;
+}
+
+
+
+.page-main__info__line{
+    width: 3px;
+    height: 192.18px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #7526A6 100%);
+}
+
+.page-main__info__endLine{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: -11px;
+}
+
+.page-main__info__endLine>div{
+    width: 3px;
+    height: 16.64px;
+    background: #7526A6;
+}
+.page-main__info__endLine>div:nth-of-type(1){
+    transform: rotate(57.26deg);
+    margin-right: -7.8px;
+}
+.page-main__info__endLine>div:nth-of-type(2){
+    transform: rotate(-57.26deg);
+    margin-left: -7.8px;
+}
+
+
+
+.page-main__cardWrapper{
+    width: 100%;
+    padding: 0 3%;
+}
+.page-main__card{
+    width: 100%;
+    background-color: #631694;
+    border-radius: 35px;
+    padding: 62px 3% 31px 3%;
+}
+
+
+.page-main__card__infoWrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.page-main__card__info{
+    display: flex;
+    gap: 20px;
+}
+
+.page-main__card__info__imgWrapper{
+    min-width: 90px;
+    height: 90px;
+    width: 90.39px;
+    border-radius: 20px;
+    background: #FFFFFF33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-main__card__info__imgWrapper>div{
+    width: 50px;
+}
+.page-main__card__info__img{
+    width: 100%;
+}
+.page-main__card__info__text{
+    font-family: "Roboto", sans-serif;   
+}
+.page-main__card__info__text>h1{
+    font-size: 19.65px;
+    font-weight: 700;
+    line-height: 23.03px;
+    color: #FFFFFF;    
+    margin-bottom: 20px;
+}
+.page-main__card__info__text>p{
+    font-size: 13.29px;
+    font-weight: 500;
+    line-height: 24.81px;
+    color: #FFFFFF99;    
+}
+
+.page-main__card__btnWrapper{
+    width: 100%;
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+}
+.page-main__card__btnWrapper>h1{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF  ;
+}
+
+.page-main__card__btn{
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 11px;
+}
+.page-main__card__btn>button{
+    width: 100%;
+    padding: 1.7vh 0;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF; 
+    background: none;
+
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22.5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .4s;
+
+    &:hover{
+        color: #775489;
+        background: #ffffff6e;
+        border: 1px solid #ffffff6e; 
+        
+    }
+}
+
+
+
+
+
+.page-article__carouselWrapper{
+    width: 100%;
+    margin-top: 120px;
+    padding: 0 10%;
+}
+
+
+
+
+
+

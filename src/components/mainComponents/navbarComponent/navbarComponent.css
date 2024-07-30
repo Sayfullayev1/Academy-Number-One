@@ -1,0 +1,70 @@
+.page-navbar{
+    width: 100%;
+    max-width: 1540px;
+    padding: 0 2%;
+    height: 60px;
+    border-bottom: 0.5px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .6s;
+}
+
+
+.page-navbar__logoWrapper{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 90px;
+}
+
+.page-navbar__logoText>h1{
+    font-family: "Urbanist", sans-serif;
+    font-size: 17.3px;
+    font-weight: 600;
+    line-height: 25.94px;
+}
+
+.page-navbar__btnWrapper{
+    display: flex;
+    gap: 17px;
+}
+.page-navbar__btnWrapper>a{
+    text-decoration: none;
+}
+
+.page-navbar__contactBtn{
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #46086D;
+    font-family: "Urbanist", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    line-height: 22.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.page-navbar__contactBtn>span{
+    display: flex;
+    align-items: center;
+}
+
+.page-navbar__linkBtn{
+    padding: 8px 35px 8px 35px;
+    border-radius: 5px;
+    border: 1px solid #46086D;
+    background-color: white;
+    font-family: "Urbanist", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22.5px;
+    cursor: pointer;
+}
+
+.page-navbar__menuBtn{
+    display: none;
+}

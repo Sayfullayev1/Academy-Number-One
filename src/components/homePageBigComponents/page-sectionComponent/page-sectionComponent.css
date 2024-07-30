@@ -1,0 +1,45 @@
+.page-section{
+    width: 100%;
+}
+
+
+.page-section__videoWrapper{
+    padding: 0 5%;
+    margin-top: 90px;
+}
+
+
+.page-section__videoWrapper__text{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.page-section__videoWrapper__text>h1{
+    font-size: 28.95px;
+    font-weight: 500;
+    line-height: 38px;
+}
+.page-section__videoWrapper__text>h2{
+    font-size: 28.95px;
+    font-weight: 700;
+    line-height: 38px;
+    color: #46086D;
+}
+
+.page-section__videoWrapper__wrap{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 17px;
+    margin-top: 67px;
+}
+
+.page-section__videoWrapper__video{
+    border-radius: 25px;
+    overflow: hidden;
+}
+.page-section__videoWrapper__video>video{
+    width: 100%;
+    height: 100%;
+    objectFit: cover;
+}

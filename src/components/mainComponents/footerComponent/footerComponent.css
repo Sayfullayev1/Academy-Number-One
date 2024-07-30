@@ -1,0 +1,126 @@
+.page-footer{
+    width: 100%;
+    padding: 0 5%;
+    border-top: 1px solid #EFF0F6
+}
+
+
+.page-footer__wrap{
+    width: 100%;
+    padding: 120px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+.page-footer__menuWrapper{
+    display: flex;
+    gap: 95px;
+}
+
+.page-footer__menu__text{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #170F49;
+    margin-bottom: 40px;
+}
+.page-footer__menu__list{
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    row-gap: 18px;
+}
+.page-footer__menu__link{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    color: #6F6C90;    
+}
+
+
+
+.page-footer__info__logo{
+    display: flex;
+    align-items: center;
+}
+.page-footer__info__logo>h1{
+    font-family: "Urbanist", sans-serif;
+    font-size: 24.32px;
+    font-weight: 600;
+    line-height: 36.48px;
+    color: #32054D;    
+}
+.page-footer__info__text>h1{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #6F6C90;
+    margin: 24px 0 24px 0;
+}
+
+.page-footer__info__Logos{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+
+.page-footer__info__text{
+    max-width: 300px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #170F49;
+    margin-bottom: 42px;
+}
+
+.page-footer__info__list{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 22px;
+    list-style: none;
+}
+.page-footer__info__link{
+    display: flex;
+    gap: 6px;
+    text-decoration: none;
+}
+.page-footer__info__link>h2{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #6F6C90;   
+}
+
+
+.page-footer__select{
+    width: 100%;
+    border-top: 1px solid #D9DBE9;
+    padding: 25px 10px 35px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+}
+
+.page-footer__select__text>h1{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #6F6C90;    
+}
+.page-footer__select__info>span{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #6F6C90;
+}
+.page-footer__select__info>span>a{
+    color: #4A3AFF;
+}
+
+
+
