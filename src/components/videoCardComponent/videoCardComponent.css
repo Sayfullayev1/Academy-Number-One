@@ -1,0 +1,63 @@
+.videoCard{
+    width: 100%;
+    aspect-ratio: 1 / 1.4;
+    overflow: hidden;
+    border-radius: 17.49px;
+    position: relative;
+    cursor: pointer;
+}
+
+.videoCard__wrap{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.videoCard__video{
+    width: 100%;
+    height: 100%;
+    object-Fit: cover;
+}
+
+.videoCard__btn{
+    width: 30px;
+    position: absolute;
+    z-index: 3;
+    top: calc( 100% - 60px );
+    right:30px;
+}
+.videoCard__btn>img{
+    width: 100%;
+}
+
+
+
+
+@media ( max-width: 1250px) {
+    .videoCard__btn{
+        width: 25px;
+        top: calc( 100% - 40px );
+        right: 15px;
+    }
+}
+
+
+
+@media ( max-width: 1000px) {
+    .videoCard__btn{
+        width: 20px;
+        top: calc( 100% - 30px );
+        right: 10px;
+    }
+}
+
+
+/* 
+@media ( max-width: 700px) {
+    .videoCard__btn{
+        width: 20px;
+        top: calc( 100% - 30px );
+        right: 10px;
+    }
+} */

@@ -1,0 +1,362 @@
+@media (max-width: 1250px) {
+    .floatingButton{
+        width: 90px;
+        height: 90px;
+    }
+    .floatingButton__wrap{
+        width: 64px;
+        height: 64px;
+    }
+
+
+    .floatingButton__btn{
+        width: 42px;
+    }
+    .floatingButton__btn>img{
+        width: 100%;
+    }
+
+
+    .floatingButton__card {
+        top: -220%;
+        right: 110%;
+        width: 432px;
+        border-radius: 22px;
+    }
+
+
+    .floatingButton__card__title {
+        width: 100%;
+        padding: 15px 6% 12px 6%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .floatingButton__card__titleText>h2{
+        font-size: 15.54px;
+        font-weight: 400;
+        line-height: 23.8px;
+        text-align: left;
+        color: #FFFFFF;    
+    }
+    .floatingButton__card__logo{
+        width: 36px;
+    }
+    .floatingButton__card__logo>img{
+        width: 100%;
+    }
+
+    .floatingButton__card__info {
+        border-top-left-radius: 22px;
+        border-top-right-radius: 22px;
+        padding: 37px 6% 23px 6%;
+    }
+
+    .floatingButton__card__text>h1:nth-of-type(2) {
+        margin-top: 26px;
+    }
+
+    .floatingButton__card__btnWrapper {
+        margin-top: 30px;
+    }
+
+    .floatingButton__card__btn {
+        padding: 5px 0;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .floatingButton{
+        width: 68px;
+        height: 68px;
+    }
+    .floatingButton__wrap{
+        width: 55.14px;
+        height: 55.14px;
+    }
+
+
+    .floatingButton__btn{
+        width: 31.86px;
+    }
+    .floatingButton__btn>img{
+        width: 100%;
+    }
+
+
+
+    .floatingButton__card {
+        top: -220%;
+        right: 110%;
+        width: 402px;
+        border-radius: 22px;
+    }
+
+
+    .floatingButton__card__title {
+        width: 100%;
+        padding: 12px 5% 9px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .floatingButton__card__info {
+        border-top-left-radius: 22px;
+        border-top-right-radius: 22px;
+        padding: 30px 6% 19px 6%;
+    }
+
+    .floatingButton__card__text>h1 {
+        font-size: 14.54px;
+        font-weight: 400;
+        line-height: 23.8px;
+        text-align: left;
+    }
+
+    .floatingButton__card__text>h1:nth-of-type(2) {
+        margin-top: 18px;
+    }
+
+    .floatingButton__card__btnWrapper {
+        margin-top: 30px;
+        gap: 11px;
+    }
+
+
+
+    .floatingButton__card__btn{
+        padding: 5px 0;
+        font-size: 13px;
+        line-height: 18.49px;
+    }
+    .floatingButton__card__btn>span{
+        width: 25px;
+    }
+    .floatingButton__card__btn>span>img{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .floatingButton{
+        width: 63px;
+        height: 63px;
+    }
+    .floatingButton__wrap{
+        width: 51.14px;
+        height: 51.14px;
+    }
+
+
+    .floatingButton__btn{
+        width: 27.86px;
+    }
+    .floatingButton__btn>img{
+        width: 100%;
+    }
+
+
+
+    .floatingButton__card {
+        top: -220%;
+        right: 110%;
+        width: 322px;
+        border-radius: 22px;
+    }
+
+
+    .floatingButton__card__title {
+        width: 100%;
+        padding: 12px 5% 9px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .floatingButton__card__info {
+        border-top-left-radius: 22px;
+        border-top-right-radius: 22px;
+        padding: 20px 6% 14px 6%;
+    }
+
+    .floatingButton__card__text>h1 {
+        font-size: 14.54px;
+        font-weight: 400;
+        line-height: 23.8px;
+    }
+
+    .floatingButton__card__text>h1:nth-of-type(2) {
+        margin-top: 18px;
+    }
+
+    .floatingButton__card__btnWrapper {
+        margin-top: 14px;
+        gap: 7px;
+    }
+
+
+    .floatingButton__card__btn {
+        padding: 5px 0;
+        font-size: 10px;
+        line-height: 14.49px;
+        gap: 5px;
+    }
+    .floatingButton__card__btn>span{
+        width: 17px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .floatingButton {
+        position: fixed;
+        top: 75%;
+        right: 1%;
+    }
+    .floatingButton__wrap{
+        width: 51.14px;
+        height: 51.14px;
+    }
+
+    .floatingButton__btn{
+        width: 27.86px;
+    }
+    .floatingButton__btn>img{
+        width: 100%;
+    }
+
+
+
+    .floatingButton__card {
+        top: -180%;
+        right: 103%;
+        width: 232px;
+        border-radius: 22px;
+    }
+
+
+    .floatingButton__card__title {
+        width: 100%;
+        padding: 8px 5% 6px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .floatingButton__card__titleText>h2 {
+        font-size: 13.54px;
+        line-height: 20.8px;
+    }
+
+    .floatingButton__card__info {
+        border-top-left-radius: 22px;
+        border-top-right-radius: 22px;
+        padding: 16px 5% 10px 5%;
+    }
+
+    .floatingButton__card__text>h1 {
+        font-size: 10.54px;
+        line-height: 17.8px;
+    }
+
+    .floatingButton__card__text>h1:nth-of-type(2) {
+        margin-top: 15px;
+    }
+
+    .floatingButton__card__btnWrapper {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+
+    .floatingButton__card__btn {
+        padding: 5px 0;
+        font-size: 10px;
+        line-height: 14.49px;   
+        gap: 5px;
+    }
+    .floatingButton__card__btn>span {
+        width: 14px;
+    }
+}
+
+
+
+@media (max-width: 430px) {
+    .floatingButton {
+        width: 53px;
+        height: 53px;
+        position: fixed;
+        top: 75%;
+        right: 1%;
+    }
+    .floatingButton__wrap{
+        width: 41.14px;
+        height: 41.14px;
+    }
+
+    .floatingButton__btn{
+        width: 23.86px;
+    }
+    .floatingButton__btn>img{
+        width: 100%;
+    }
+
+
+
+    .floatingButton__card {
+        top: -180%;
+        right: 103%;
+        width: 232px;
+        border-radius: 22px;
+    }
+
+
+    .floatingButton__card__title {
+        width: 100%;
+        padding: 8px 5% 6px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .floatingButton__card__titleText>h2 {
+        font-size: 13.54px;
+        line-height: 20.8px;
+    }
+
+    .floatingButton__card__info {
+        border-top-left-radius: 22px;
+        border-top-right-radius: 22px;
+        padding: 16px 5% 10px 5%;
+    }
+
+    .floatingButton__card__text>h1 {
+        font-size: 10.54px;
+        line-height: 17.8px;
+    }
+
+    .floatingButton__card__text>h1:nth-of-type(2) {
+        margin-top: 15px;
+    }
+
+    .floatingButton__card__btnWrapper {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+
+    .floatingButton__card__btn {
+        padding: 5px 0;
+        font-size: 10px;
+        line-height: 14.49px;   
+        gap: 5px;
+    }
+    .floatingButton__card__btn>span {
+        width: 14px;
+    }
+}

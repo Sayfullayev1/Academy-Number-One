@@ -1,8 +1,10 @@
 import React from 'react'
 import './page-sectionComponent.css'
+import './page-sectionComponentResponsive.css'
 
 
 import video from "../../../video/47116636_1398629244120351_1238740285526184807_n.mp4"
+import VideoCardComponent from '../../videoCardComponent/videoCardComponent'
 
 
 export default function PageSectionComponent() {
@@ -44,11 +46,9 @@ export default function PageSectionComponent() {
 
             <div className='page-section__videoWrapper__wrap'>
                 {
-                    videoData?.map( (item) => {
+                    videoData?.map( (item, index) => {
                         return(
-                            <div className='page-section__videoWrapper__video'>
-                                <video src={video} poster={`${item.titlePhoto}`} controls></video>
-                            </div>
+                            <VideoCardComponent elem={ {image: item , video: video ,} } key={index}/>
                         )
                     })
                 }
