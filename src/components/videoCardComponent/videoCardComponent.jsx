@@ -1,59 +1,70 @@
-import React, { useEffect, useRef, useState } from 'react';
-import './videoCardComponent.css';
-import videoBtn from "../../photos/videoBtnImages/Group 370.svg";
+import React, { useEffect, useRef, useState } from 'react'
+import './videoCardComponent.css'
+
+import videoBtn from "../../photos/videoBtnImages/Group 370.svg"
 
 export default function VideoCardComponent(props) {
-  const [isControlsVisible, setIsControlsVisible] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
 
-  const imageCard = useRef();
-  const videoElement = useRef();
-  const videoBtnElement = useRef();
+  let [isControlsVisible, setIsControlsVisible] = useState(false)
 
-
-
-  function videoCardWork() {
-      setIsControlsVisible(true);
-
-
-      function dd(params) {
-        if (isControlsVisible === true) {
-          videoElement.current.play();
-        }
-        
-      }
-
-      setTimeout( dd(), 113)
-
-  }
+  const imageCard = useRef()
+  const videoElement = useRef()
+  const videoBtnElement = useRef()
 
 
   useEffect(() => {
-    if (isControlsVisible && videoBtnElement.current) {
-      videoBtnElement.current.style.display = 'none';
-    }
-  }, [isControlsVisible]);
+    const cardElement = imageCard.current;
+
+    cardElement.addEventListener('mousedown', function() {
+
+      setIsControlsVisible(true)
+
+      if (isControlsVisible) {  
+        console.log("Ddd");
+        videoElement.current.play();
+      } 
+    });
+
+    cardElement.addEventListener('touchend', function() {
+      setIsControlsVisible(true)
+
+      if (isControlsVisible===false) {  
+        console.log("ddd");
+        videoElement.current.play();
+      } 
+    });
+
+  }, [])
+
+
+
+  useEffect(() => {
+    if (isControlsVisible) {
+      videoBtnElement.current.style.cssText = `
+        display: none;
+      `
+    } 
+
+  }, [isControlsVisible])
 
   return (
-    <div className='videoCard' ref={imageCard} onClick={() => videoCardWork() }>
-      <div className='videoCard__wrap'>
-        <video 
-          className='videoCard__video' 
-          ref={videoElement} 
-          // src={props?.elem.video} 
-          poster={props?.elem.image.titlePhoto} 
-          controls={isControlsVisible ? true : undefined}
-          controlsList="nodownload"
-        >
-          <source src={props?.elem.video} />
-        </video>
-      </div>
+    <div className='videoCard' ref={imageCard} >
 
-      {!isControlsVisible && (
-        <div className='videoCard__btn'>
-          <img ref={videoBtnElement} src={videoBtn} alt="Play button" />
+        <div className='videoCard__wrap'>
+            <video 
+            className='videoCard__video' 
+            ref={videoElement} 
+            src={ props?.elem.video } 
+            poster={`${props?.elem.image.titlePhoto}`} 
+            controls={isControlsVisible ? 'controls' : undefined}
+            controlsList="nodownload"
+            ></video>
         </div>
-      )}
+
+        <div className='videoCard__btn'>
+          <img ref={videoBtnElement} src={videoBtn} alt="" />
+        </div>
+
     </div>
-  );
+  )
 }
