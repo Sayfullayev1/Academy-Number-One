@@ -10,7 +10,7 @@ import CProgrammingLogo from "../../../photos/headerPageBackgroundImages/C Progr
 import vscodTypeCssLogo from "../../../photos/headerPageBackgroundImages/vscode-icons_file-type-css.svg"
 import vscodTypeHtmlLogo from "../../../photos/headerPageBackgroundImages/vscode-icons_file-type-html.svg"
 import visualStudioCodeLogo from "../../../photos/headerPageBackgroundImages/Visual Studio Code 2019.svg"
-import btnRemoveElement from "../../../photos/headerPageBackgroundImages/btn/Group 39470.svg"
+import btnRemoveElement from "../../../photos/exitButtonImg/Group 39470.svg"
 
 
 

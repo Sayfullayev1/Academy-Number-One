@@ -190,4 +190,11 @@
     .page-navbar__menuBtn{
         display: inline;
     }
+
+    
+    .page-navbar__dropdown-menu{
+        display: inline;
+    }
 }
+
+

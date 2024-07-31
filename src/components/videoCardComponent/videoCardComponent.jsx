@@ -20,7 +20,6 @@ export default function VideoCardComponent(props) {
       setIsControlsVisible(true)
 
       if (isControlsVisible) {  
-        console.log("Ddd");
         videoElement.current.play();
       } 
     });
@@ -29,7 +28,6 @@ export default function VideoCardComponent(props) {
       setIsControlsVisible(true)
 
       if (isControlsVisible===false) {  
-        console.log("ddd");
         videoElement.current.play();
       } 
     });
