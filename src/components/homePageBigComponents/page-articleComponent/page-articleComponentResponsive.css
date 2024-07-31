@@ -603,7 +603,7 @@
         top: calc( 1090% + 31px );
     }
     .page-article__info__arrow4{
-        top: calc( 1470% + 31px );
+        top: calc( 1470% + 32px );
     }
     
 }
@@ -699,6 +699,10 @@
         line-height: 27.01px;
     }
     
+    .page-article__info__arrow4{
+        top: calc( 1470% + 31px );
+        right: 10px;
+    }
 }
 
 

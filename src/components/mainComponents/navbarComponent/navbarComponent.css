@@ -18,6 +18,16 @@
     margin-left: 90px;
 }
 
+
+.page-navbar__logo>a{
+    width: 47px;
+    border-radius: 50%;
+}
+.page-navbar__logo>a>img{
+    width: 100%;
+}
+
+
 .page-navbar__logoText>h1{
     font-family: "Urbanist", sans-serif;
     font-size: 17.3px;

@@ -85,7 +85,9 @@ export default function NavbarComponent({ headerInfo}  ) {
       <div className='page-navbar__logoWrapper'>
 
         <div className='page-navbar__logo'>
-          <img src={logo} alt="" />
+          <Link to={"/"}>
+            <img src={logo} alt="" />
+          </Link>
         </div>
 
         <div className='page-navbar__logoText'>
