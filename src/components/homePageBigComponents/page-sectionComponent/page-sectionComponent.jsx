@@ -78,7 +78,10 @@ export default function PageSectionComponent() {
 
                 <div className='userDataCard__wrap'>
 
-                    <div className='userDataWrapper'></div>
+                    <div className='userDataWrapper'>
+
+                        
+                    </div>
 
                     <div className='userDataCard__imgWrapper'></div>
 

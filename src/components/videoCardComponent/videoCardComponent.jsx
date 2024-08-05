@@ -26,7 +26,7 @@ export default function VideoCardComponent(props) {
 
     
 
-    let scrollPositionIndex 
+    let scrollPositionIndex = window.scrollY
 
     cardElement.addEventListener('touchstart', function(event) {
       scrollPositionIndex = window.scrollY
@@ -35,7 +35,7 @@ export default function VideoCardComponent(props) {
     cardElement.addEventListener('touchend', function() {
       setIsControlsVisible(true)
 
-      let newScrollPositionIndex
+      let newScrollPositionIndex = window.scrollY
       
       if (isControlsVisible===false && scrollPositionIndex === newScrollPositionIndex ) {  
         videoElement.current.play();
