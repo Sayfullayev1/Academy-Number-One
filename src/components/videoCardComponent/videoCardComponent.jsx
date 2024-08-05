@@ -24,10 +24,20 @@ export default function VideoCardComponent(props) {
       } 
     });
 
+    
+
+    let scrollPositionIndex 
+
+    cardElement.addEventListener('touchstart', function(event) {
+      scrollPositionIndex = window.scrollY
+    });
+
     cardElement.addEventListener('touchend', function() {
       setIsControlsVisible(true)
 
-      if (isControlsVisible===false) {  
+      let newScrollPositionIndex
+      
+      if (isControlsVisible===false && scrollPositionIndex === newScrollPositionIndex ) {  
         videoElement.current.play();
       } 
     });

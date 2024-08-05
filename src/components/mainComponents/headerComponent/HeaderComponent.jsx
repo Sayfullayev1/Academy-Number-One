@@ -17,7 +17,6 @@ import btnRemoveElement from "../../../photos/exitButtonImg/Group 39470.svg"
 
 
 
-
 export default function HeaderComponent({ sendDataToParent }) {
 
 

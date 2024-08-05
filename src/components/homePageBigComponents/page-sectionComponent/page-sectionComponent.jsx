@@ -60,10 +60,39 @@ export default function PageSectionComponent() {
 
 
 
-        <div></div>
+        <div className='page-section__userDataCardWrapper'>
+            
 
 
-      
+            <div className='page-section__userDataCard'>
+
+
+                <div className='userDataCard__title'>
+
+                    <h1>Keling, tanlashda yordam beramiz!</h1>
+
+                    <p>Agar sizda format haqida savollaringiz bo'lsa yoki nimani tanlashni bilmasangiz, raqamingizni qoldiring: barcha savollaringizga javob berish uchun qo'ng'iroq qilamiz.</p>
+
+                </div>
+
+
+                <div className='userDataCard__wrap'>
+
+                    <div className='userDataWrapper'></div>
+
+                    <div className='userDataCard__imgWrapper'></div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
 
     </section>
   )

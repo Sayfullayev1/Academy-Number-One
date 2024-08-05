@@ -37,3 +37,39 @@
 
 
 
+.page-section__userDataCardWrapper{
+    width: 100%;
+    margin-top: 85px;
+    padding: 0 6%;
+}
+
+.page-section__userDataCard{
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 43px;
+    padding: 4% 0 0 4% ;
+}
+
+
+.userDataCard__title{
+    max-width: 58%;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+.userDataCard__title>h1{
+    font-size: 39.22px;
+    font-weight: 700;
+    line-height: 49.61px;
+    color: #46086D;
+    margin-bottom: 7px;
+}
+.userDataCard__title>p{
+    font-size: 22.03px;
+    font-weight: 400;
+    line-height: 27.87px;
+    color: #5F5F5F;
+}
+
+.userDataCard__wrap{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
