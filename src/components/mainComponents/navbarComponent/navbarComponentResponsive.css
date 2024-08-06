@@ -24,6 +24,7 @@
         height: 33.42px;
     }
     .page-navbar__logo>a>img{
+        margin-top: 3px;
         width: 100%;
     }
 
