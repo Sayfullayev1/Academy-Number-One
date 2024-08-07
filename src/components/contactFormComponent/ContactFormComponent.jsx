@@ -54,49 +54,49 @@ export default function ContactFormComponent() {
 
 
 
-        nameInput.current.addEventListener('input', function(){
-            phoneNumberInput.current.focus()
+        // nameInput.current.addEventListener('input', function(){
+        //     phoneNumberInput.current.focus()
 
-            if (nameInput.current.value === "") {
-                nameInput.current.style.cssText = `
-                    border: 1px solid red;
-                `
-            } else {
-                nameInput.current.style.cssText = `
-                    border: 1px solid #46086D;
-                `
-            }
-        })
-
-
-        phoneNumberInput.current.addEventListener('input', function(){
-            emailInput.current.focus()
-
-            if (phoneNumberInput.current.value.length < 12) {
-                phoneNumberInput.current.style.cssText = `
-                    border: 1px solid red;
-                `
-            } else {
-                phoneNumberInput.current.style.cssText = `
-                    border: 1px solid #46086D;
-                `
-            }
-        })
+        //     if (nameInput.current.value === "") {
+        //         nameInput.current.style.cssText = `
+        //             border: 1px solid red;
+        //         `
+        //     } else {
+        //         nameInput.current.style.cssText = `
+        //             border: 1px solid #46086D;
+        //         `
+        //     }
+        // })
 
 
-        emailInput.current.addEventListener('input', function(){
-            // emailInput.current.focus()
+        // phoneNumberInput.current.addEventListener('input', function(){
+        //     emailInput.current.focus()
 
-            if (emailInput.current.value.length < 12 || emailInput.current.value.endsWith('@gmail.com') === false) {
-                emailInput.current.style.cssText = `
-                    border: 1px solid red;
-                `
-            } else {
-                emailInput.current.style.cssText = `
-                    border: 1px solid #46086D;
-                `
-            }
-        })
+        //     if (phoneNumberInput.current.value.length < 12) {
+        //         phoneNumberInput.current.style.cssText = `
+        //             border: 1px solid red;
+        //         `
+        //     } else {
+        //         phoneNumberInput.current.style.cssText = `
+        //             border: 1px solid #46086D;
+        //         `
+        //     }
+        // })
+
+
+        // emailInput.current.addEventListener('input', function(){
+        //     // emailInput.current.focus()
+
+        //     if (emailInput.current.value.length < 12 || emailInput.current.value.endsWith('@gmail.com') === false) {
+        //         emailInput.current.style.cssText = `
+        //             border: 1px solid red;
+        //         `
+        //     } else {
+        //         emailInput.current.style.cssText = `
+        //             border: 1px solid #46086D;
+        //         `
+        //     }
+        // })
 
     }, [])
 
