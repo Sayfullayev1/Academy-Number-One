@@ -3,13 +3,13 @@ import './page-sectionComponent.css'
 import './page-sectionComponentResponsive.css'
 
 import VideoCardComponent from '../../videoCardComponent/videoCardComponent'
+import ContactFormComponent from '../../contactFormComponent/ContactFormComponent'
+
 
 
 import video from "../../../video/47116636_1398629244120351_1238740285526184807_n.mp4"
 
 
-import btnArrowImg from "../../../photos/PageSectionComponentImages/arrow-right-circle.svg"
-import userDataCardImg from "../../../photos/PageSectionComponentImages/Computerservice_fuer_Arztpraxen_2-4921bac1 1 (1).svg"
 
 
 export default function PageSectionComponent() {
@@ -67,74 +67,7 @@ export default function PageSectionComponent() {
 
         <div className='page-section__userDataCardWrapper'>
             
-
-
-            <div className='page-section__userDataCard'>
-
-
-                <div className='userDataCard__title'>
-
-                    <h1>Keling, tanlashda yordam beramiz!</h1>
-
-                    <p>Agar sizda format haqida savollaringiz bo'lsa yoki nimani tanlashni bilmasangiz, raqamingizni qoldiring: barcha savollaringizga javob berish uchun qo'ng'iroq qilamiz.</p>
-
-                </div>
-
-
-                <div className='userDataCard__wrap'>
-
-                    <div className='userDataWrapper'>
-
-                        <div className='userData__inputWrapper'>
-
-                            <div>
-                                <input className='name-input' type="text" placeholder='Ismingiz'/>
-                            </div>
-
-                            <div className='phone-number-inputWrapper'>
-                                <span>+998</span>
-                                <input className='phone-number-input' type="text" placeholder='-- --- -- --'/>
-                            </div>
-                            
-                            <div>
-                                <input className='email-input' type="text" placeholder='E-mail'/>
-                            </div>
-
-                        </div>
-
-                        <div className='userData__btnWrapper'>
-
-                            <ul className='userData__btnWrapper__list'>
-                                <li className='userData__btnWrapper__item'>
-                                    <input type="checkbox" className="userData__btnWrapper__checkbox" />
-                                    <span>Karyeraam uchun maslahat olishni hohlayman</span>
-                                </li>
-                                <li className='userData__btnWrapper__item'>
-                                    <input type="checkbox" className="userData__btnWrapper__checkbox" />
-                                    <span>Men shaxsiy ma'lumotlarni qayta ishlashga rozilik beraman</span>
-                                </li>
-                            </ul>
-
-                            <button className='userData__btnWrapper__btn'>
-                                Jo’natish
-                                <span>
-                                    <img src={btnArrowImg} alt="" />
-                                </span>
-                            </button>
-                        </div>
-
-                    </div>
-
-                    <div className='userDataCard__imgWrapper'>
-                        <img src={userDataCardImg} alt="" />
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
+            <ContactFormComponent/>
 
         </div>
 

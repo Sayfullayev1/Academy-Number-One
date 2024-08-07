@@ -1,0 +1,350 @@
+@media ( max-width: 1350px) {
+    .userDataCard__title{
+        width: 680px;
+    }
+    .userDataCard__title>h1{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .userDataCard__title>p{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .userDataCard__wrap{
+        margin-top: 50px;
+    }
+    .userData__inputWrapper{
+        row-gap: 26px;
+    }
+
+    .name-input{
+        padding: 18px;
+    }
+    .phone-number-inputWrapper>span{
+        padding: 0 18px;
+    }
+    .phone-number-input{
+        padding: 18px 18px 18px 96px;
+    }
+    .email-input{
+        padding: 18px;
+    }
+}
+
+
+
+@media ( max-width: 1250px) {
+
+    .userDataCard__title{
+        width: 600px;
+    }
+    .userDataCard__title>h1{
+        font-size: 33px;
+        line-height: 40px;
+    }
+    .userDataCard__title>p{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .userDataCard__wrap{
+        margin-top: 50px;
+    }
+    .userData__inputWrapper{
+        row-gap: 26px;
+    }
+
+    .name-input{
+        padding: 17px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .phone-number-inputWrapper>span{
+        padding: 0 17px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .phone-number-input{
+        padding: 17px 17px 17px 88px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .email-input{
+        padding: 17px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+
+
+@media ( max-width: 1150px) {
+    .userDataCard__title{
+        width: 560px;
+    }
+    .userDataCard__title>h1{
+        font-size: 31px;
+        line-height: 38px;
+    }
+    .userDataCard__title>p{
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .userDataCard__wrap{
+        margin-top: 40px;
+    }
+    .userData__inputWrapper{
+        row-gap: 26px;  
+    }
+
+    .name-input{
+        padding: 16px;
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .phone-number-inputWrapper>span{
+        padding: 0 16px;
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .phone-number-input{
+        padding: 16px 16px 16px 82px;
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .email-input{
+        padding: 16px;
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+    .userData__btnWrapper__checkbox {
+        width: 13px;
+        height: 13px;
+        border-radius: 3px;
+        border: 0.50px solid #000000;
+    }
+
+    .userData__btnWrapper__item>span {
+        font-size: 11.5px;
+        line-height: 17.03px;
+    }
+
+    .userData__btnWrapper__btn{
+        margin: 30px 0 40px 0;
+        border-radius: 11.62px;
+        font-size: 15px;
+        line-height: 24.8px;
+        gap: 11.17px;
+        padding: 11px 48px;
+    }
+
+    .userData__btnWrapper__btn>span{
+        width: 15px;
+    }
+    .userData__btnWrapper__btn>span>img{
+        width: 100%;
+    }
+}
+
+
+
+@media ( max-width: 1000px) {
+
+    .userDataCard__title{
+        width: 560px;
+    }
+    .userDataCard__title>h1{
+        font-size: 29.17px;
+        line-height: 36.9px;
+    }
+    .userDataCard__title>p{
+        font-size: 16.39px;
+        line-height: 20.73px;
+    }
+
+    .userDataCard__wrap{
+        margin-top: 30px;
+    }
+    .userData__inputWrapper{
+        row-gap: 26px;  
+    }
+
+    .name-input{
+        padding: 15px;
+        font-size: 11.9px;
+        line-height: 17.85px;
+        border-radius: 11.16px;
+    }
+    .phone-number-inputWrapper>span{
+        padding: 0 15px;
+        font-size: 11.9px;
+        line-height: 17.85px;
+    }
+    .phone-number-input{
+        padding: 15px 15px 15px 76px;
+        font-size: 11.9px;
+        line-height: 17.85px;
+        border-radius: 11.16px;
+    }
+    .email-input{
+        padding: 15px;
+        font-size: 11.9px;
+        line-height: 17.85px;
+        border-radius: 11.16px;
+    }
+
+    .userData__btnWrapper {
+        margin-top: 24px;
+    }
+
+    .userData__btnWrapper__list {
+        row-gap: 10px;
+    }
+
+
+    .userData__btnWrapper__checkbox {
+        width: 11.07px;
+        height: 11.07px;
+        border-radius: 2.55px;
+        border: 0.43px solid #000000;
+    }
+
+    .userData__btnWrapper__item>span {
+        font-size: 9.93px;
+        line-height: 14.9px;
+    }
+
+    .userData__btnWrapper__btn{
+        margin: 20px 0 30px 0;
+        border-radius: 9.39px;
+        font-size: 13.79px;
+        line-height: 20.68px;
+        gap: 9.54px;
+        padding: 9.5px 40px;
+    }
+
+    .userData__btnWrapper__btn>span{
+        width: 12.65px;
+    }
+    .userData__btnWrapper__btn>span>img{
+        width: 100%;
+    }
+}
+
+
+
+@media ( max-width: 900px) {
+    .userDataWrapper{
+        width: 106%;
+    }
+}
+
+
+@media ( max-width: 700px) {
+
+    .page-section__userDataCard {
+        border-radius: 27px;
+        padding: 7% ;
+    }
+
+
+    .userDataCard__title{
+        width: auto;
+    }
+
+    .userDataWrapper{
+        width: 100%;
+    }
+
+    .userDataCard__wrap{
+        grid-template-columns: 1fr;
+    }
+
+    .userDataCard__imgWrapper{
+        display: none;
+    }
+
+    .userData__btnWrapper__btn{
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+
+
+@media ( max-width: 480px) {
+    .page-section__userDataCard {
+        padding: 6% ;
+    }
+
+    .userDataCard__title>h1{
+        font-size: 27.7px;
+        line-height: 35.04px;
+        margin-bottom: 11px;
+    }
+    .userDataCard__title>p{
+        font-size: 9.34px;
+        line-height: 11.81px;
+    }
+
+
+    .userData__btnWrapper{
+        margin-top: 20px;
+    }
+
+    .userData__inputWrapper {
+        row-gap: 17px;
+    }
+
+    .name-input{
+        padding: 10.5px;
+        font-size: 8.09px;
+        line-height: 12.13px;
+        border-radius: 7.58px;
+    }
+    .phone-number-inputWrapper>span{
+        padding: 0 15px;
+        font-size: 8.09px;
+        line-height: 12.13px;
+    }
+    .phone-number-input{
+        padding: 10.5px 10.5px 10.5px 62px;
+        font-size: 8.09px;
+        line-height: 12.13px;
+        border-radius: 7.58px;
+    }
+    .email-input{
+        padding: 10.5px;
+        font-size: 8.09px;
+        line-height: 12.13px;
+        border-radius: 7.58px;
+    }
+
+    .userData__btnWrapper__item{
+        gap: 4.62px;
+    }
+    .userData__btnWrapper__checkbox{
+        width: 10.79px;
+        height: 10.79px;
+        border-radius: 0.42px;
+    }
+    .userData__btnWrapper__item>span{
+        font-size: 9.69px;
+        line-height: 14.53px;
+    }
+
+    .userData__btnWrapper__item:nth-of-type(2){
+        width: 105%;
+    }
+
+    .userData__btnWrapper__btn{
+        margin: 30px auto 0 auto;
+    }
+}
+
