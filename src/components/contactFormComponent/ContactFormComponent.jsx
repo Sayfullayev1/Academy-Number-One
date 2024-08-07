@@ -54,7 +54,7 @@ export default function ContactFormComponent() {
 
 
 
-        nameInput.current.addEventListener('keypress', function(){
+        nameInput.current.addEventListener('input', function(){
             phoneNumberInput.current.focus()
 
             if (nameInput.current.value === "") {
@@ -69,7 +69,7 @@ export default function ContactFormComponent() {
         })
 
 
-        phoneNumberInput.current.addEventListener('keypress', function(){
+        phoneNumberInput.current.addEventListener('input', function(){
             emailInput.current.focus()
 
             if (phoneNumberInput.current.value.length < 12) {
@@ -84,7 +84,7 @@ export default function ContactFormComponent() {
         })
 
 
-        emailInput.current.addEventListener('keypress', function(){
+        emailInput.current.addEventListener('input', function(){
             // emailInput.current.focus()
 
             if (emailInput.current.value.length < 12 || emailInput.current.value.endsWith('@gmail.com') === false) {
