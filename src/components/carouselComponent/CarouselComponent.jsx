@@ -1,9 +1,13 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './carouselComponent.css'
 import './carouselComponentResponsive.css'
 
 
 import InfoCoursesCardArray from "../../localStorage/infoCoursesCardArray/InfoCoursesCardArray"
+
+import leftCarouselBtn from "../../photos/carouselBtnImg/Group 365.svg"
+import rightCarouselBtn from "../../photos/carouselBtnImg/Group 366.svg"
+
 
 
 export default function CarouselComponent() {
@@ -14,50 +18,209 @@ export default function CarouselComponent() {
     const carouselCard= useRef([])
 
 
-    // if (InfoCoursesCardArray) {
-    //     console.log(InfoCoursesCardArray);
-    // }
+    const carouselPaginationDot = useRef([])
 
 
 
-    carouselWork()
+    const leftCarouselScrollingBtn = useRef()
+    const rightCarouselScrollingBtn = useRef()
+
+
+
+
+
+
+    useEffect(() => {
+       
+        carouselCard.current.forEach( (item) => {
+            const clone = item.cloneNode(true);
+            carouselCardsWrap.current.appendChild(clone)
+        })
+
+
+        carouselCard.current.forEach( (item) => {
+            const clone = item.cloneNode(true);
+            carouselCardsWrap.current.appendChild(clone)
+        })
+
+        
+        let carouselLengh = InfoCoursesCardArray.length
+
+        carouselCardsWrap.current.style.cssText=`
+            margin: 0 calc( 10% + ${carouselLengh} * -85% );
+        `
+
+    }, [])
+
+
+    useEffect(() => {
+        carouselWork();
+    }, []);
 
     function carouselWork() {
 
         let num = 0
 
-        
+        const timeCoefficient = 5;
+
+
+        let carouselLengh = InfoCoursesCardArray.length
         
         function carouselMovement(){
 
             num++
-            console.log(num);
 
-
-            let carouselLengh = InfoCoursesCardArray.length + 1
 
             if (num===1) {
                 
-
                 carouselCardsWrap.current.style.cssText=`
-                    margin: 0 calc( 10% + ${carouselLengh} * -85% );
-                    transition: margin calc( ${carouselLengh} * 5s ) linear;
-                `
-            } else if( num === carouselLengh - 1){
+                        margin: 0 calc( 10% + ${carouselLengh*2} * -85% );
+                        transition: margin calc( ${carouselLengh} * ${timeCoefficient}s ) linear;
+                    `  
                 
+            } else if (num  === carouselLengh + 1) {
+                carouselCardsWrap.current.style.cssText=` margin: 0 calc( 10% + ${carouselLengh} * -85% )`
+                num = 1
+                setTimeout( () => startTheCarouselMoving() , 1)
+            } 
 
-                carouselCard.current.map( (item) => {
-                    carouselCardsWrap.current.append(item)
-                })
 
+            function startTheCarouselMoving() {
+                
+                carouselCardsWrap.current.style.cssText=`
+                    margin: 0 calc( 10% + ${carouselLengh*2} * -85% );
+                    transition: margin calc( ${carouselLengh} * ${timeCoefficient}s ) linear;
+                `
             }
-            
+
+
+
+            carouselPaginationDot.current.forEach((item, index) => {
+                item.style.cssText=`
+                        background: #FFFFFF;
+                        transition:  calc( ${timeCoefficient}s ) linear;
+                    `
+
+                if (index === num) {
+                    item.style.cssText=`
+                        background: #C650D6F5;
+                        transition:  calc( ${timeCoefficient}s ) linear;
+                    `
+                } else if (num === carouselLengh && index===0) {
+                    item.style.cssText=`
+                        background: #C650D6F5;
+                        transition:  calc( ${timeCoefficient}s ) linear;
+                    `
+                }
+            })
         }
 
         setTimeout( () => carouselMovement() , 1)
 
-        let intervalOfCarouselMovement = setInterval( () => carouselMovement(), 1000)
+        let intervalOfCarouselMovement = setInterval( () => carouselMovement(), timeCoefficient*1000)
 
+
+
+
+        setTimeout( () => carouselBtnClick() , 1)
+
+        function carouselBtnClick() {
+
+            let clickOnCarouselBtn = false
+            
+            leftCarouselScrollingBtn.current.addEventListener( "click", function() {
+
+                if (!clickOnCarouselBtn) {
+                    clearInterval(intervalOfCarouselMovement)
+                    clickOnCarouselBtn = true
+                }
+
+                num--
+                
+                carouselCardsWrap.current.style.cssText=`
+                    margin: 0 calc( 10% + ${carouselLengh + num-1} * -85% );
+                    transition: margin calc(  1.5s ) linear;
+                `
+                
+                
+                if (-num === carouselLengh -1 - 1) {
+
+                    setTimeout(() => {
+                        carouselCardsWrap.current.style.cssText = `
+                            margin: 0 calc(10% + ${carouselLengh+1} * -85%);
+                        `;
+                        num = 2;
+                    }, 1501);
+                }
+
+                carouselPaginationDot.current.forEach((item, index) => {
+                    item.style.cssText=`
+                        background: #FFFFFF;
+                        transition:  calc( 1.5s ) linear;
+                    `
+
+                    
+
+                    if (index === InfoCoursesCardArray.length+num-1) {
+                        item.style.cssText=`
+                            background: #C650D6F5;
+                            transition:  calc( 1.5s ) linear;
+                        `
+                    } else if (num === 1 && index===0) {
+                        item.style.cssText=`
+                            background: #C650D6F5;
+                            transition:  calc( 1.5s ) linear;
+                        `
+                    }
+            })
+            })
+
+
+            rightCarouselScrollingBtn.current.addEventListener( "click", function (){
+
+
+                if (!clickOnCarouselBtn) {
+                    clearInterval(intervalOfCarouselMovement)
+                    clickOnCarouselBtn = true
+                }
+                
+                carouselCardsWrap.current.style.cssText=`
+                    margin: 0 calc( 10% + ${carouselLengh + num} * -85% );
+                    transition: margin calc(  1.5s ) linear;
+                `
+
+                num++
+                if (num === carouselLengh+1) {
+                    setTimeout(() => {
+                        carouselCardsWrap.current.style.cssText = `
+                            margin: 0 calc(10% + ${carouselLengh} * -85%);
+                        `;
+                        num = 1;
+                    }, 1501);
+                }
+
+                
+
+                carouselPaginationDot.current.forEach((item, index) => {
+                        item.style.cssText=`
+                            background: #FFFFFF;
+                            transition:  calc(1.5s ) linear;
+                        `
+    
+                        if (index === num-1) {
+                            item.style.cssText=`
+                                background: #C650D6F5;
+                                transition:  calc( 1.5s ) linear;
+                            `
+                        } else if (num === carouselLengh+1 && index===0) {
+                            item.style.cssText=`
+                                background: #C650D6F5;
+                                transition:  calc( ${timeCoefficient}s ) linear;
+                            `
+                        }
+                })
+            })
+        }
     }
 
 
@@ -72,10 +235,23 @@ export default function CarouselComponent() {
         </div>
 
 
-        <div className='carousel_backgroundGradient1'></div>
+
+        <div className='carousel_backgroundGradient1'>
+
+            <div ref={leftCarouselScrollingBtn}>
+                <img src={leftCarouselBtn} alt="" />
+            </div>
+
+        </div>
 
 
-        <div className='carousel_backgroundGradient2'></div>
+        <div className='carousel_backgroundGradient2'>
+
+            <div ref={rightCarouselScrollingBtn}>
+                <img src={rightCarouselBtn} alt="" />
+            </div>
+
+        </div> 
 
 
 
@@ -119,14 +295,16 @@ export default function CarouselComponent() {
             }
         </div>
 
-{/* 
-        <div className='carousel__cardPosinationWrapper'>
+
+        <div className='carousel__pagination'>
             {
-                InfoCoursesCardArray?.map( (item, index) => {
-                    <span className=''></span>
+                InfoCoursesCardArray?.map((item,index) => {
+                    return(
+                        <span ref={el => carouselPaginationDot.current[index] = el} key={index}></span>
+                    )
                 })
             }
-        </div> */}
+        </div>
 
 
     </div>

@@ -112,6 +112,14 @@
     top: 0;
     left: 0;
     z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel_backgroundGradient1>div{
+    margin-left: -25%;
+    cursor: pointer;
 }
 
 .carousel_backgroundGradient2{
@@ -122,4 +130,31 @@
     top: 0;
     right: 0;
     z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel_backgroundGradient2>div{
+    margin-right: -25%;
+    cursor: pointer;
+}
+
+
+
+.carousel__pagination{
+    padding: 40px 0 35px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.carousel__pagination>span{
+    width: 5.5px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: #FFFFFF;
+
 }

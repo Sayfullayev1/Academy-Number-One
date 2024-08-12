@@ -131,7 +131,7 @@ export default function PageArticleComponent() {
 
         <div className='page-article__carousel'>
 
-          {/* <CarouselComponent/> */}
+          <CarouselComponent/>
 
         </div>
 

@@ -28,7 +28,7 @@ export default function VideoCardComponent(props) {
 
     let scrollPositionIndex = window.scrollY
 
-    cardElement.addEventListener('touchstart', function(event) {
+    cardElement.addEventListener('touchstart', function() {
       scrollPositionIndex = window.scrollY
     });
 
