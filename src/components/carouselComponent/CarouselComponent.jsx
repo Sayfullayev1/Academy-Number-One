@@ -10,6 +10,8 @@ import rightCarouselBtn from "../../photos/carouselBtnImg/Group 366.svg"
 
 
 
+
+
 export default function CarouselComponent() {
 
 
@@ -285,7 +287,9 @@ export default function CarouselComponent() {
                             
 
                             <div className='carousel__card__imgWrapper'>
-                                <img className='carousel__card__img' src={item.img} alt="" />
+                                <div className='carousel__card__img'>
+                                    <img src={item.img} alt="1234" />
+                                </div>
                             </div> 
 
 
