@@ -34,6 +34,10 @@
     margin: 0 10%;
     display: flex;
     gap: 5%;
+
+
+    /* transform: translateX(-1110%); */
+    /* margin: 0 -1100%; */
 }
 
 
@@ -151,6 +155,7 @@
 }
 .carousel__card__img>img{
     width: 100%;
+
 }
 
 

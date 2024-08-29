@@ -49,7 +49,10 @@ export default function CarouselComponent() {
         let carouselLengh = InfoCoursesCardArray.length
 
         carouselCardsWrap.current.style.cssText=`
-            margin: 0 calc( 10% + ${carouselLengh} * -85% );
+            // margin: 0 calc( 10% + ${carouselLengh} * -85% );
+
+            transform: translateX( ${ carouselLengh * (-85) }% );
+
         `
 
     }, [])
@@ -63,7 +66,7 @@ export default function CarouselComponent() {
 
         let num = 0
 
-        const timeCoefficient = 5;
+        const timeCoefficient = 4;
 
 
         let carouselLengh = InfoCoursesCardArray.length
@@ -74,25 +77,48 @@ export default function CarouselComponent() {
 
 
             if (num===1) {
-                
                 carouselCardsWrap.current.style.cssText=`
-                        margin: 0 calc( 10% + ${carouselLengh*2} * -85% );
-                        transition: margin calc( ${carouselLengh} * ${timeCoefficient}s ) linear;
+                        // margin: 0 calc( 10% + ${carouselLengh*2} * -85% );
+                        transition: transform calc( ${carouselLengh} * ${timeCoefficient}s ) linear;
+                    
+                        transform: translateX( ${ carouselLengh * 2 * (-85) }% );
+
+
                     `  
                 
             } else if (num  === carouselLengh + 1) {
-                carouselCardsWrap.current.style.cssText=` margin: 0 calc( 10% + ${carouselLengh} * -85% )`
+                carouselCardsWrap.current.style.cssText=` 
+                        // margin: 0 calc( 10% + ${carouselLengh} * -85% )
+                        // transition: transform  0.01s  linear;
+
+                        transform: translateX( ${ carouselLengh * (-85) }% );
+
+                    `
+
+                // console.log(carouselLengh  * (-85));
+
+                
+                setTimeout( () => {
+                    startTheCarouselMoving()
+                } , 1)
+
+                
+
                 num = 1
-                setTimeout( () => startTheCarouselMoving() , 1)
             } 
 
 
             function startTheCarouselMoving() {
                 
                 carouselCardsWrap.current.style.cssText=`
-                    margin: 0 calc( 10% + ${carouselLengh*2} * -85% );
-                    transition: margin calc( ${carouselLengh} * ${timeCoefficient}s ) linear;
+                    // margin: 0 calc( 10% + ${carouselLengh*2} * -85% );
+                    transition: transform ${carouselLengh*timeCoefficient -0.01}s linear;
+
+                    transform: translateX( ${ carouselLengh * 2 * (-85) }% );
                 `
+
+                console.log(carouselLengh * 2 * (-85));
+                
             }
 
 
@@ -140,8 +166,11 @@ export default function CarouselComponent() {
                 num--
                 
                 carouselCardsWrap.current.style.cssText=`
-                    margin: 0 calc( 10% + ${carouselLengh + num-1} * -85% );
-                    transition: margin calc(  1.5s ) linear;
+                    // margin: 0 calc( 10% + ${carouselLengh + num-1} * -85% );
+                    transition: transform calc(  1.5s ) linear;
+
+                    transform: translateX( ${ (carouselLengh + num-1) * (-85) }% );
+
                 `
                 
                 
@@ -149,7 +178,10 @@ export default function CarouselComponent() {
 
                     setTimeout(() => {
                         carouselCardsWrap.current.style.cssText = `
-                            margin: 0 calc(10% + ${carouselLengh+1} * -85%);
+                            // margin: 0 calc(10% + ${carouselLengh+1} * -85%);
+
+                            transform: translateX( ${ (carouselLengh+1) * (-85) }% );
+
                         `;
                         num = 2;
                     }, 1501);
@@ -187,15 +219,21 @@ export default function CarouselComponent() {
                 }
                 
                 carouselCardsWrap.current.style.cssText=`
-                    margin: 0 calc( 10% + ${carouselLengh + num} * -85% );
-                    transition: margin calc(  1.5s ) linear;
+                    // margin: 0 calc( 10% + ${carouselLengh + num} * -85% );
+                    transition: transform calc(  1.5s ) linear;
+
+                    transform: translateX( ${ (carouselLengh + num) * -85 }% );
+
                 `
 
                 num++
                 if (num === carouselLengh+1) {
                     setTimeout(() => {
                         carouselCardsWrap.current.style.cssText = `
-                            margin: 0 calc(10% + ${carouselLengh} * -85%);
+                            // margin: 0 calc(10% + ${carouselLengh} * -85%);
+
+                            transform: translateX( ${ carouselLengh * (-85) }% );
+
                         `;
                         num = 1;
                     }, 1501);

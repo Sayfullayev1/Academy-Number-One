@@ -499,6 +499,10 @@
     }
 
 
+    .carousel__card__text {
+        height: 30px;
+    }
+
     .carousel__card__term {
         margin: 17px 0 8px 0;
     }
@@ -507,6 +511,9 @@
         display: grid;
         grid-template-columns: 1.6fr 1fr;
     }
+
+    
+
     .carousel__card__imgWrapper {
         flex-grow: 0;
     }
