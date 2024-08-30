@@ -84,6 +84,7 @@
     list-style: none;
 }
 .page-footer__info__link{
+    max-width: 190px;
     display: flex;
     gap: 6px;
     text-decoration: none;

@@ -17,6 +17,8 @@ import youTube from "../../../photos/footerPhotos/FooterImgLogo/YouTube.svg"
 
 import email from "../../../photos/footerPhotos/footerImgList/Email.svg"
 import phone from "../../../photos/footerPhotos/footerImgList/Phone.svg"
+import location from "../../../photos/footerPhotos/footerImgList/Spacer Icon Wrapper.svg"
+
 
 
 
@@ -136,8 +138,8 @@ export default function FooterComponent() {
       link: "tel:+507561188",
     },
     {
-      photo: phone,
-      text: "Chilonzorde oka",  
+      photo: location,
+      text: "Chilonzor tuman, M-mavzu, 5A",  
       link: "https://yandex.com/maps",
     },
   ]

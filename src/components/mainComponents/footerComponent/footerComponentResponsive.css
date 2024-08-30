@@ -78,6 +78,7 @@
     }
     .page-footer__info__link{
         gap: 4.2px;
+        max-width: 140px;
     }
     .page-footer__info__link>h2{
         font-size: 12.8px;
@@ -161,7 +162,7 @@
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .page-footer__wrap{
         width: 100%;
         padding: 40px 0 40px 0;
@@ -180,12 +181,18 @@
     }
     
 
+    .page-footer__select{
+        display: grid;
+        text-align: center;
+    }
+
     .page-footer__select__text{
-        padding-bottom: 70px;  
-        transform: translateY(200%);
+        /* transform: translateY(200%); */
+        order: 2;
     }
     .page-footer__select__info{
-        transform: translateY(-400%);
+        /* transform: translateY(-400%); */
+        order: 1;
     }
 }
 
@@ -211,7 +218,7 @@
         gap: 4px;
     }
     .page-footer__select__info{
-        transform: translateY(-180%);
+        margin: 0 auto;
     }
 }
 

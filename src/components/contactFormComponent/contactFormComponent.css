@@ -168,6 +168,8 @@
     cursor: pointer;
 
     transition: transform 0.2s, background-color 0.2s; 
+
+    margin-top: 100px;
 }
 .userData__btnWrapper__btn:active {
     transform: scale(0.97);

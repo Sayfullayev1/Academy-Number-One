@@ -205,7 +205,7 @@ export default function PageMainComponent() {
                 </div>
 
                 <h1>
-                    Yozni yangi bilimlar bilan 
+                    Kuzni yangi bilimlar bilan 
                     <span> 
                         <div>
                             <img src={elipse1} alt="" />

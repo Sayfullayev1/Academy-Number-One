@@ -173,7 +173,7 @@ export default function ContactFormComponent() {
 
                 <div className='userData__btnWrapper'>
 
-                    <ul className='userData__btnWrapper__list'>
+                    {/* <ul className='userData__btnWrapper__list'>
                         <li className='userData__btnWrapper__item'>
                             <input type="checkbox" className="userData__btnWrapper__checkbox" />
                             <span>Karyeraam uchun maslahat olishni hohlayman</span>
@@ -182,7 +182,7 @@ export default function ContactFormComponent() {
                             <input type="checkbox" className="userData__btnWrapper__checkbox" />
                             <span>Men shaxsiy ma'lumotlarni qayta ishlashga rozilik beraman</span>
                         </li>
-                    </ul>
+                    </ul> */}
 
                     <button className='userData__btnWrapper__btn' onClick={() => sendDataInformation()}>
                         Jo’natish
