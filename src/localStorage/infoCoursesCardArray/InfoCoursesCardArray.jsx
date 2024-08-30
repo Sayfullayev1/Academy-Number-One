@@ -11,6 +11,8 @@ import PythonCardPhoto from '../../photos/courseCardsImages/python-language-logo
 
 
 
+
+
 const InfoCoursesCardArray = [
     {
         type: "Kasb",
