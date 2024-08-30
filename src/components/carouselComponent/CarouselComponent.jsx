@@ -33,29 +33,27 @@ export default function CarouselComponent() {
 
 
     useEffect(() => {
-        if (carouselCard && carouselCardsWrap) {
+       
+        carouselCard.current.forEach( (item) => {
+            const clone = item.cloneNode(true);
+            carouselCardsWrap.current.appendChild(clone)
+        })
+
+
+        carouselCard.current.forEach( (item) => {
+            const clone = item.cloneNode(true);
+            carouselCardsWrap.current.appendChild(clone)
+        })
+
         
-            carouselCard.current.forEach( (item) => {
-                const clone = item.cloneNode(true);
-                carouselCardsWrap.current.appendChild(clone)
-            })
+        let carouselLengh = InfoCoursesCardArray.length
 
+        carouselCardsWrap.current.style.cssText=`
+            // margin: 0 calc( 10% + ${carouselLengh} * -85% );
 
-            carouselCard.current.forEach( (item) => {
-                const clone = item.cloneNode(true);
-                carouselCardsWrap.current.appendChild(clone)
-            })
+            transform: translateX( ${ carouselLengh * (-85) }% );
 
-
-            let carouselLengh = InfoCoursesCardArray.length
-
-            carouselCardsWrap.current.style.cssText=`
-                // margin: 0 calc( 10% + ${carouselLengh} * -85% );
-
-                transform: translateX( ${ carouselLengh * (-85) }% );
-
-            `
-        }
+        `
 
     }, [])
 
@@ -78,7 +76,7 @@ export default function CarouselComponent() {
             num++
 
 
-            if (num===1 && carouselCardsWrap) {
+            if (num===1) {
                 carouselCardsWrap.current.style.cssText=`
                         // margin: 0 calc( 10% + ${carouselLengh*2} * -85% );
                         transition: transform calc( ${carouselLengh} * ${timeCoefficient}s ) linear;
@@ -88,7 +86,7 @@ export default function CarouselComponent() {
 
                     `  
                 
-            } else if ((num  === carouselLengh + 1) && carouselCardsWrap) {
+            } else if (num  === carouselLengh + 1) {
                 carouselCardsWrap.current.style.cssText=` 
                         // margin: 0 calc( 10% + ${carouselLengh} * -85% )
                         // transition: transform  0.01s  linear;
