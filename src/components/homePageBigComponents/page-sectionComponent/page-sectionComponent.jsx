@@ -34,7 +34,7 @@ export default function PageSectionComponent() {
   return (
     <section className='page-section'>
 
-
+{/* 
 
 
         <div className='page-section__videoWrapper'>
@@ -60,7 +60,7 @@ export default function PageSectionComponent() {
             </div>
 
 
-        </div>
+        </div> */}
 
 
 

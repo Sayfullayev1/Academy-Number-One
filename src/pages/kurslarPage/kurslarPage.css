@@ -20,4 +20,38 @@
 .page-courses__text>a{
     color: blue;
     margin: 15px auto 0 auto;
+    font-size: 25.26px;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 1000px) {
+    .page-courses__text>h1{
+        font-size: 68.26px;
+    }
+    .page-courses__text>a{
+        font-size: 18.26px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .page-courses__text>h1{
+        font-size: 58.26px;
+    }
+    .page-courses__text>a{
+        font-size: 18.26px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .page-courses__text>h1{
+        font-size: 35.26px;
+    }
+    .page-courses__text>a{
+        font-size: 12.26px;
+    }
 }

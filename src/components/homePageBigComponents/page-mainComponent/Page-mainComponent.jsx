@@ -13,6 +13,11 @@ import vector3 from "../../../photos/PageMainComponentImages/Vector 2.svg"
 import vector4 from "../../../photos/PageMainComponentImages/zap (1).svg"
 
 
+import ligoImg1 from '../../../photos/mainPageCardImages/online-test 1.svg'
+import ligoImg2 from '../../../photos/mainPageCardImages/exam 1.svg'
+import ligoImg3 from '../../../photos/mainPageCardImages/exam 1.svg'
+
+
 
 
 export default function PageMainComponent() {
@@ -27,17 +32,17 @@ export default function PageMainComponent() {
             Name: "Front-End",
             Info: [
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/74b9/c4a0/5863014e829874effcdb4e101a4bfaea?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YwsklCHlcU~1075qUC1rBuVifswShJT7p55xyW4YNda9Wh7bcF1PoXP7-KliKM5xl7K3RbAE~nGp5ojPgCV1Wqm57jolyCWoCb9f8-qQor9bZLEEykZzl1rfkrRLUSGeQxCBrMHV3kr7RXtV3rENxxaDV4bD85KMfO0Fvx4m62pm~d4XESLmdqIa36C5SBi4PfJULesPY7ZXeFGM6V1UYL~WrNM7pHn2~v2BLU9rWhPmf045hiY0r7PX9SJGmxfzSnwblAB4VHhMyePX6fNrmP6iiP1L6QMjI0Jlg~kPzZwhNt0GBqiP0IkA1~Xetcg7tvyeH~Tr5Ic5DiqQc0PKlg__",
+                    img: ligoImg1,
                     title: "Eng so'nggi ko'nikmalarni o'rganing",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/2b99/15a5/b2bccb2fc3576435451e50183a1ab681?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dfZSLAwvSNGCDnGWGhpjy-bZ0vxwb3TwRh~KPY0eyNpj8YoT3H~72pS-KZTYKvXIgsIT3stFHXEZs4LFUGxTlQ6cCX1VA8xaY3mdJBmBTwO2RqBCjexNYgB51fzct98A5Lo-EhDvaBhrMjUm2l-fvcI21QRAUUxyGzYfSorcmH3YJNOxliemSMCL39ceNel-fH7u3i-~PdXzrgxIldgymlZTkJNb1gB9CmIFfkS5rvNzXrqx0ojHTBt~4sql3p89rfVaMrIffkdj~RiHp9a4dIvJ888y0yYuiBE2jx8-TA1Kd51cPA8lSxU21c7iMeE9oIfmdofP7yIqBQ1Rx3nVgw__",
+                    img: ligoImg2,
                     title: "Karyera uchun tayyorlaning",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/2b45/0a7a/aeec583b742195169b6d6e836c5b8470?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gcgIOhCAB3zxNoytHRs3mfiAXO~pPNmPyL4YzmARW5866gspfyaA1rlAc8u7pH1mZdijj-E1NgDXWu~~iSGaYa5xPI-hg-ihoUWkpjDW70IGbqlKMG~YnAAWsEewIUMUxFMYduGzLtXx9-Y6LVguVdtQ5BvJksf9Ja0Cov5uP10s64Vc-pUPYwrOjsgkiUXA-grg1pOTOQSE5zmMf1dOqeP0mPRXzNeAIXZBTeuBZNXmeOXR-tqJPRmRjsP5IRkEnbPiqrZqQ-4QVzDSkcxvWWRVez9z8cCuiJrJF01TwxxRfqzxxp7hH05QVmcZYyl1K1vGY09LqNhkJ-sCsdDB6w__",
+                    img: ligoImg3,
                     title: "Sertifikatga ega bo'ling",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
@@ -47,17 +52,17 @@ export default function PageMainComponent() {
             Name: "Back-End",
             Info: [
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/74b9/c4a0/5863014e829874effcdb4e101a4bfaea?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YwsklCHlcU~1075qUC1rBuVifswShJT7p55xyW4YNda9Wh7bcF1PoXP7-KliKM5xl7K3RbAE~nGp5ojPgCV1Wqm57jolyCWoCb9f8-qQor9bZLEEykZzl1rfkrRLUSGeQxCBrMHV3kr7RXtV3rENxxaDV4bD85KMfO0Fvx4m62pm~d4XESLmdqIa36C5SBi4PfJULesPY7ZXeFGM6V1UYL~WrNM7pHn2~v2BLU9rWhPmf045hiY0r7PX9SJGmxfzSnwblAB4VHhMyePX6fNrmP6iiP1L6QMjI0Jlg~kPzZwhNt0GBqiP0IkA1~Xetcg7tvyeH~Tr5Ic5DiqQc0PKlg__",
+                    img: ligoImg1,
                     title: "Eng so'nggi ko'nikmalarni o'rganing",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/2b99/15a5/b2bccb2fc3576435451e50183a1ab681?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dfZSLAwvSNGCDnGWGhpjy-bZ0vxwb3TwRh~KPY0eyNpj8YoT3H~72pS-KZTYKvXIgsIT3stFHXEZs4LFUGxTlQ6cCX1VA8xaY3mdJBmBTwO2RqBCjexNYgB51fzct98A5Lo-EhDvaBhrMjUm2l-fvcI21QRAUUxyGzYfSorcmH3YJNOxliemSMCL39ceNel-fH7u3i-~PdXzrgxIldgymlZTkJNb1gB9CmIFfkS5rvNzXrqx0ojHTBt~4sql3p89rfVaMrIffkdj~RiHp9a4dIvJ888y0yYuiBE2jx8-TA1Kd51cPA8lSxU21c7iMeE9oIfmdofP7yIqBQ1Rx3nVgw__",
+                    img: ligoImg2,
                     title: "Karyera uchun tayyorlaning",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/2b45/0a7a/aeec583b742195169b6d6e836c5b8470?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gcgIOhCAB3zxNoytHRs3mfiAXO~pPNmPyL4YzmARW5866gspfyaA1rlAc8u7pH1mZdijj-E1NgDXWu~~iSGaYa5xPI-hg-ihoUWkpjDW70IGbqlKMG~YnAAWsEewIUMUxFMYduGzLtXx9-Y6LVguVdtQ5BvJksf9Ja0Cov5uP10s64Vc-pUPYwrOjsgkiUXA-grg1pOTOQSE5zmMf1dOqeP0mPRXzNeAIXZBTeuBZNXmeOXR-tqJPRmRjsP5IRkEnbPiqrZqQ-4QVzDSkcxvWWRVez9z8cCuiJrJF01TwxxRfqzxxp7hH05QVmcZYyl1K1vGY09LqNhkJ-sCsdDB6w__",
+                    img: ligoImg3,
                     title: "Sertifikatga ega bo'ling",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
@@ -67,17 +72,17 @@ export default function PageMainComponent() {
             Name: "Full-Stack",
             Info: [
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/74b9/c4a0/5863014e829874effcdb4e101a4bfaea?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YwsklCHlcU~1075qUC1rBuVifswShJT7p55xyW4YNda9Wh7bcF1PoXP7-KliKM5xl7K3RbAE~nGp5ojPgCV1Wqm57jolyCWoCb9f8-qQor9bZLEEykZzl1rfkrRLUSGeQxCBrMHV3kr7RXtV3rENxxaDV4bD85KMfO0Fvx4m62pm~d4XESLmdqIa36C5SBi4PfJULesPY7ZXeFGM6V1UYL~WrNM7pHn2~v2BLU9rWhPmf045hiY0r7PX9SJGmxfzSnwblAB4VHhMyePX6fNrmP6iiP1L6QMjI0Jlg~kPzZwhNt0GBqiP0IkA1~Xetcg7tvyeH~Tr5Ic5DiqQc0PKlg__",
+                    img: ligoImg1,
                     title: "Eng so'nggi ko'nikmalarni o'rganing",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/2b99/15a5/b2bccb2fc3576435451e50183a1ab681?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dfZSLAwvSNGCDnGWGhpjy-bZ0vxwb3TwRh~KPY0eyNpj8YoT3H~72pS-KZTYKvXIgsIT3stFHXEZs4LFUGxTlQ6cCX1VA8xaY3mdJBmBTwO2RqBCjexNYgB51fzct98A5Lo-EhDvaBhrMjUm2l-fvcI21QRAUUxyGzYfSorcmH3YJNOxliemSMCL39ceNel-fH7u3i-~PdXzrgxIldgymlZTkJNb1gB9CmIFfkS5rvNzXrqx0ojHTBt~4sql3p89rfVaMrIffkdj~RiHp9a4dIvJ888y0yYuiBE2jx8-TA1Kd51cPA8lSxU21c7iMeE9oIfmdofP7yIqBQ1Rx3nVgw__",
+                    img: ligoImg2,
                     title: "Karyera uchun tayyorlaning",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/2b45/0a7a/aeec583b742195169b6d6e836c5b8470?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gcgIOhCAB3zxNoytHRs3mfiAXO~pPNmPyL4YzmARW5866gspfyaA1rlAc8u7pH1mZdijj-E1NgDXWu~~iSGaYa5xPI-hg-ihoUWkpjDW70IGbqlKMG~YnAAWsEewIUMUxFMYduGzLtXx9-Y6LVguVdtQ5BvJksf9Ja0Cov5uP10s64Vc-pUPYwrOjsgkiUXA-grg1pOTOQSE5zmMf1dOqeP0mPRXzNeAIXZBTeuBZNXmeOXR-tqJPRmRjsP5IRkEnbPiqrZqQ-4QVzDSkcxvWWRVez9z8cCuiJrJF01TwxxRfqzxxp7hH05QVmcZYyl1K1vGY09LqNhkJ-sCsdDB6w__",
+                    img: ligoImg3,
                     title: "Sertifikatga ega bo'ling",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
@@ -87,17 +92,17 @@ export default function PageMainComponent() {
             Name: "Web-testirovshik",
             Info: [
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/74b9/c4a0/5863014e829874effcdb4e101a4bfaea?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YwsklCHlcU~1075qUC1rBuVifswShJT7p55xyW4YNda9Wh7bcF1PoXP7-KliKM5xl7K3RbAE~nGp5ojPgCV1Wqm57jolyCWoCb9f8-qQor9bZLEEykZzl1rfkrRLUSGeQxCBrMHV3kr7RXtV3rENxxaDV4bD85KMfO0Fvx4m62pm~d4XESLmdqIa36C5SBi4PfJULesPY7ZXeFGM6V1UYL~WrNM7pHn2~v2BLU9rWhPmf045hiY0r7PX9SJGmxfzSnwblAB4VHhMyePX6fNrmP6iiP1L6QMjI0Jlg~kPzZwhNt0GBqiP0IkA1~Xetcg7tvyeH~Tr5Ic5DiqQc0PKlg__",
+                    img: ligoImg1,
                     title: "Eng so'nggi ko'nikmalarni o'rganing",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/2b99/15a5/b2bccb2fc3576435451e50183a1ab681?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dfZSLAwvSNGCDnGWGhpjy-bZ0vxwb3TwRh~KPY0eyNpj8YoT3H~72pS-KZTYKvXIgsIT3stFHXEZs4LFUGxTlQ6cCX1VA8xaY3mdJBmBTwO2RqBCjexNYgB51fzct98A5Lo-EhDvaBhrMjUm2l-fvcI21QRAUUxyGzYfSorcmH3YJNOxliemSMCL39ceNel-fH7u3i-~PdXzrgxIldgymlZTkJNb1gB9CmIFfkS5rvNzXrqx0ojHTBt~4sql3p89rfVaMrIffkdj~RiHp9a4dIvJ888y0yYuiBE2jx8-TA1Kd51cPA8lSxU21c7iMeE9oIfmdofP7yIqBQ1Rx3nVgw__",
+                    img: ligoImg2,
                     title: "Karyera uchun tayyorlaning",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/2b45/0a7a/aeec583b742195169b6d6e836c5b8470?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gcgIOhCAB3zxNoytHRs3mfiAXO~pPNmPyL4YzmARW5866gspfyaA1rlAc8u7pH1mZdijj-E1NgDXWu~~iSGaYa5xPI-hg-ihoUWkpjDW70IGbqlKMG~YnAAWsEewIUMUxFMYduGzLtXx9-Y6LVguVdtQ5BvJksf9Ja0Cov5uP10s64Vc-pUPYwrOjsgkiUXA-grg1pOTOQSE5zmMf1dOqeP0mPRXzNeAIXZBTeuBZNXmeOXR-tqJPRmRjsP5IRkEnbPiqrZqQ-4QVzDSkcxvWWRVez9z8cCuiJrJF01TwxxRfqzxxp7hH05QVmcZYyl1K1vGY09LqNhkJ-sCsdDB6w__",
+                    img: ligoImg3,
                     title: "Sertifikatga ega bo'ling",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
@@ -107,17 +112,17 @@ export default function PageMainComponent() {
             Name: "Php dasturchi",
             Info: [
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/74b9/c4a0/5863014e829874effcdb4e101a4bfaea?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YwsklCHlcU~1075qUC1rBuVifswShJT7p55xyW4YNda9Wh7bcF1PoXP7-KliKM5xl7K3RbAE~nGp5ojPgCV1Wqm57jolyCWoCb9f8-qQor9bZLEEykZzl1rfkrRLUSGeQxCBrMHV3kr7RXtV3rENxxaDV4bD85KMfO0Fvx4m62pm~d4XESLmdqIa36C5SBi4PfJULesPY7ZXeFGM6V1UYL~WrNM7pHn2~v2BLU9rWhPmf045hiY0r7PX9SJGmxfzSnwblAB4VHhMyePX6fNrmP6iiP1L6QMjI0Jlg~kPzZwhNt0GBqiP0IkA1~Xetcg7tvyeH~Tr5Ic5DiqQc0PKlg__",
+                    img: ligoImg1,
                     title: "Eng so'nggi ko'nikmalarni o'rganing",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/2b99/15a5/b2bccb2fc3576435451e50183a1ab681?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dfZSLAwvSNGCDnGWGhpjy-bZ0vxwb3TwRh~KPY0eyNpj8YoT3H~72pS-KZTYKvXIgsIT3stFHXEZs4LFUGxTlQ6cCX1VA8xaY3mdJBmBTwO2RqBCjexNYgB51fzct98A5Lo-EhDvaBhrMjUm2l-fvcI21QRAUUxyGzYfSorcmH3YJNOxliemSMCL39ceNel-fH7u3i-~PdXzrgxIldgymlZTkJNb1gB9CmIFfkS5rvNzXrqx0ojHTBt~4sql3p89rfVaMrIffkdj~RiHp9a4dIvJ888y0yYuiBE2jx8-TA1Kd51cPA8lSxU21c7iMeE9oIfmdofP7yIqBQ1Rx3nVgw__",
+                    img: ligoImg2,
                     title: "Karyera uchun tayyorlaning",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/2b45/0a7a/aeec583b742195169b6d6e836c5b8470?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gcgIOhCAB3zxNoytHRs3mfiAXO~pPNmPyL4YzmARW5866gspfyaA1rlAc8u7pH1mZdijj-E1NgDXWu~~iSGaYa5xPI-hg-ihoUWkpjDW70IGbqlKMG~YnAAWsEewIUMUxFMYduGzLtXx9-Y6LVguVdtQ5BvJksf9Ja0Cov5uP10s64Vc-pUPYwrOjsgkiUXA-grg1pOTOQSE5zmMf1dOqeP0mPRXzNeAIXZBTeuBZNXmeOXR-tqJPRmRjsP5IRkEnbPiqrZqQ-4QVzDSkcxvWWRVez9z8cCuiJrJF01TwxxRfqzxxp7hH05QVmcZYyl1K1vGY09LqNhkJ-sCsdDB6w__",
+                    img: ligoImg3,
                     title: "Sertifikatga ega bo'ling",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
@@ -127,17 +132,17 @@ export default function PageMainComponent() {
             Name: "Phyton dasturchi",
             Info: [
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/74b9/c4a0/5863014e829874effcdb4e101a4bfaea?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YwsklCHlcU~1075qUC1rBuVifswShJT7p55xyW4YNda9Wh7bcF1PoXP7-KliKM5xl7K3RbAE~nGp5ojPgCV1Wqm57jolyCWoCb9f8-qQor9bZLEEykZzl1rfkrRLUSGeQxCBrMHV3kr7RXtV3rENxxaDV4bD85KMfO0Fvx4m62pm~d4XESLmdqIa36C5SBi4PfJULesPY7ZXeFGM6V1UYL~WrNM7pHn2~v2BLU9rWhPmf045hiY0r7PX9SJGmxfzSnwblAB4VHhMyePX6fNrmP6iiP1L6QMjI0Jlg~kPzZwhNt0GBqiP0IkA1~Xetcg7tvyeH~Tr5Ic5DiqQc0PKlg__",
+                    img: ligoImg1,
                     title: "Eng so'nggi ko'nikmalarni o'rganing",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/2b99/15a5/b2bccb2fc3576435451e50183a1ab681?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dfZSLAwvSNGCDnGWGhpjy-bZ0vxwb3TwRh~KPY0eyNpj8YoT3H~72pS-KZTYKvXIgsIT3stFHXEZs4LFUGxTlQ6cCX1VA8xaY3mdJBmBTwO2RqBCjexNYgB51fzct98A5Lo-EhDvaBhrMjUm2l-fvcI21QRAUUxyGzYfSorcmH3YJNOxliemSMCL39ceNel-fH7u3i-~PdXzrgxIldgymlZTkJNb1gB9CmIFfkS5rvNzXrqx0ojHTBt~4sql3p89rfVaMrIffkdj~RiHp9a4dIvJ888y0yYuiBE2jx8-TA1Kd51cPA8lSxU21c7iMeE9oIfmdofP7yIqBQ1Rx3nVgw__",
+                    img: ligoImg2,
                     title: "Karyera uchun tayyorlaning",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/2b45/0a7a/aeec583b742195169b6d6e836c5b8470?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gcgIOhCAB3zxNoytHRs3mfiAXO~pPNmPyL4YzmARW5866gspfyaA1rlAc8u7pH1mZdijj-E1NgDXWu~~iSGaYa5xPI-hg-ihoUWkpjDW70IGbqlKMG~YnAAWsEewIUMUxFMYduGzLtXx9-Y6LVguVdtQ5BvJksf9Ja0Cov5uP10s64Vc-pUPYwrOjsgkiUXA-grg1pOTOQSE5zmMf1dOqeP0mPRXzNeAIXZBTeuBZNXmeOXR-tqJPRmRjsP5IRkEnbPiqrZqQ-4QVzDSkcxvWWRVez9z8cCuiJrJF01TwxxRfqzxxp7hH05QVmcZYyl1K1vGY09LqNhkJ-sCsdDB6w__",
+                    img: ligoImg3,
                     title: "Sertifikatga ega bo'ling",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
@@ -147,12 +152,12 @@ export default function PageMainComponent() {
             Name: "Java dasturchi",
             Info: [
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/74b9/c4a0/5863014e829874effcdb4e101a4bfaea?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YwsklCHlcU~1075qUC1rBuVifswShJT7p55xyW4YNda9Wh7bcF1PoXP7-KliKM5xl7K3RbAE~nGp5ojPgCV1Wqm57jolyCWoCb9f8-qQor9bZLEEykZzl1rfkrRLUSGeQxCBrMHV3kr7RXtV3rENxxaDV4bD85KMfO0Fvx4m62pm~d4XESLmdqIa36C5SBi4PfJULesPY7ZXeFGM6V1UYL~WrNM7pHn2~v2BLU9rWhPmf045hiY0r7PX9SJGmxfzSnwblAB4VHhMyePX6fNrmP6iiP1L6QMjI0Jlg~kPzZwhNt0GBqiP0IkA1~Xetcg7tvyeH~Tr5Ic5DiqQc0PKlg__",
+                    img: ligoImg1,
                     title: "Eng so'nggi ko'nikmalarni o'rganing",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
                 {
-                    img: "https://s3-alpha-sig.figma.com/img/2b99/15a5/b2bccb2fc3576435451e50183a1ab681?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dfZSLAwvSNGCDnGWGhpjy-bZ0vxwb3TwRh~KPY0eyNpj8YoT3H~72pS-KZTYKvXIgsIT3stFHXEZs4LFUGxTlQ6cCX1VA8xaY3mdJBmBTwO2RqBCjexNYgB51fzct98A5Lo-EhDvaBhrMjUm2l-fvcI21QRAUUxyGzYfSorcmH3YJNOxliemSMCL39ceNel-fH7u3i-~PdXzrgxIldgymlZTkJNb1gB9CmIFfkS5rvNzXrqx0ojHTBt~4sql3p89rfVaMrIffkdj~RiHp9a4dIvJ888y0yYuiBE2jx8-TA1Kd51cPA8lSxU21c7iMeE9oIfmdofP7yIqBQ1Rx3nVgw__",
+                    img: ligoImg2,
                     title: "Karyera uchun tayyorlaning",
                     text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
                 },
