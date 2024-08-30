@@ -32,10 +32,11 @@ root.render(
         <Route element={<DashboardLayout/>}>
 
           <Route path='/' element={<HomePage/>}/>
-          <Route path='/kurslar' element={<KurslarPage/>}/>
+          
 
         </Route>
-
+        
+        <Route path='/kurslar' element={<KurslarPage/>}/>
 
       </Routes>
 

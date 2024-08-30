@@ -1,0 +1,23 @@
+.page-courses{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #46086D;
+}
+
+
+.page-courses__text{
+    text-align: center;
+}
+.page-courses__text>h1{
+    font-family: "Urbanist", sans-serif;;
+    font-size: 78.26px;
+    font-weight: 600;
+    color: white;
+}
+.page-courses__text>a{
+    color: blue;
+    margin: 15px auto 0 auto;
+}

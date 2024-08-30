@@ -33,27 +33,29 @@ export default function CarouselComponent() {
 
 
     useEffect(() => {
-       
-        carouselCard.current.forEach( (item) => {
-            const clone = item.cloneNode(true);
-            carouselCardsWrap.current.appendChild(clone)
-        })
-
-
-        carouselCard.current.forEach( (item) => {
-            const clone = item.cloneNode(true);
-            carouselCardsWrap.current.appendChild(clone)
-        })
-
+        if (carouselCard && carouselCardsWrap) {
         
-        let carouselLengh = InfoCoursesCardArray.length
+            carouselCard.current.forEach( (item) => {
+                const clone = item.cloneNode(true);
+                carouselCardsWrap.current.appendChild(clone)
+            })
 
-        carouselCardsWrap.current.style.cssText=`
-            // margin: 0 calc( 10% + ${carouselLengh} * -85% );
 
-            transform: translateX( ${ carouselLengh * (-85) }% );
+            carouselCard.current.forEach( (item) => {
+                const clone = item.cloneNode(true);
+                carouselCardsWrap.current.appendChild(clone)
+            })
 
-        `
+
+            let carouselLengh = InfoCoursesCardArray.length
+
+            carouselCardsWrap.current.style.cssText=`
+                // margin: 0 calc( 10% + ${carouselLengh} * -85% );
+
+                transform: translateX( ${ carouselLengh * (-85) }% );
+
+            `
+        }
 
     }, [])
 
@@ -76,7 +78,7 @@ export default function CarouselComponent() {
             num++
 
 
-            if (num===1) {
+            if (num===1 && carouselCardsWrap) {
                 carouselCardsWrap.current.style.cssText=`
                         // margin: 0 calc( 10% + ${carouselLengh*2} * -85% );
                         transition: transform calc( ${carouselLengh} * ${timeCoefficient}s ) linear;
@@ -86,7 +88,7 @@ export default function CarouselComponent() {
 
                     `  
                 
-            } else if (num  === carouselLengh + 1) {
+            } else if ((num  === carouselLengh + 1) && carouselCardsWrap) {
                 carouselCardsWrap.current.style.cssText=` 
                         // margin: 0 calc( 10% + ${carouselLengh} * -85% )
                         // transition: transform  0.01s  linear;
@@ -123,23 +125,26 @@ export default function CarouselComponent() {
 
 
 
-            carouselPaginationDot.current.forEach((item, index) => {
-                item.style.cssText=`
-                        background: #FFFFFF;
-                        transition:  calc( ${timeCoefficient}s ) linear;
-                    `
+            carouselPaginationDot?.current.forEach((item, index) => {
+                if (item) {
+                    item.style.cssText=`
+                            background: #FFFFFF;
+                            transition:  background  ${timeCoefficient}s linear;
+                        `
 
-                if (index === num) {
-                    item.style.cssText=`
-                        background: #C650D6F5;
-                        transition:  calc( ${timeCoefficient}s ) linear;
-                    `
-                } else if (num === carouselLengh && index===0) {
-                    item.style.cssText=`
-                        background: #C650D6F5;
-                        transition:  calc( ${timeCoefficient}s ) linear;
-                    `
+                    if (index === num) {
+                        item.style.cssText=`
+                            background: #C650D6F5;
+                            transition: background  ${timeCoefficient}s  linear;
+                        `
+                    } else if (num === carouselLengh && index===0) {
+                        item.style.cssText=`
+                            background: #C650D6F5;
+                            transition: background ${timeCoefficient}s  linear;
+                        `
+                    }
                 }
+                
             })
         }
 
