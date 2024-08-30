@@ -84,7 +84,7 @@ export default function FloatingButtonComponent() {
                     </div>
 
                     <div className='floatingButton__card__btnWrapper'>
-                        <Link to={"https://t.me/username"} className='floatingButton__card__btnLink'>
+                        <Link to={"https://t.me/username"} target='blank' className='floatingButton__card__btnLink'>
                             <button className='floatingButton__card__btn'>
                                 <span>
                                     <img src={telegramLogo} alt="" />
@@ -93,7 +93,7 @@ export default function FloatingButtonComponent() {
                             </button>
                         </Link>
 
-                        <Link to={"https://wa.me/1234567890"} className='floatingButton__card__btnLink'>
+                        <Link to={"https://wa.me/507561188"} target='blank' className='floatingButton__card__btnLink'>
                             <button  className='floatingButton__card__btn'>
                                 <span>
                                     <img src={whatsAppLogo} alt="" />

@@ -150,7 +150,7 @@ export default function NavbarComponent({ headerInfo}  ) {
           </button>
         </a>
 
-        <Link to={"/kurslar"}>
+        <Link to={"/"}>
           <button className='page-navbar__linkBtn'>Kurslar</button>
         </Link>
        

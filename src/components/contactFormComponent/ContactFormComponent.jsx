@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './contactFormComponent.css'
 import './contactFormComponentResponsive.css'
 
 import btnArrowImg from "../../photos/PageSectionComponentImages/arrow-right-circle.svg"
 import userDataCardImg from "../../photos/PageSectionComponentImages/Computerservice_fuer_Arztpraxen_2-4921bac1 1 (1).svg"
+import ApiDataRepository from '../../api/apiDataRepository/ApiDataRepository'
 
 
 
@@ -14,6 +15,8 @@ export default function ContactFormComponent() {
     const emailInput = useRef()
 
 
+    const sendButton = useRef()
+    const [pressingTheButton, setPressingTheButton] = useState(false);
 
     useEffect(() => {
 
@@ -101,7 +104,11 @@ export default function ContactFormComponent() {
     }, [])
 
 
+   
+
     function sendDataInformation() {
+
+        let checkingAllInputs = 0
 
         if (nameInput.current.value === "") {
             nameInput.current.style.cssText = `
@@ -111,6 +118,7 @@ export default function ContactFormComponent() {
             nameInput.current.style.cssText = `
                 border: 1px solid #46086D;
             `
+            checkingAllInputs++
         }
         
 
@@ -122,6 +130,7 @@ export default function ContactFormComponent() {
             phoneNumberInput.current.style.cssText = `
                 border: 1px solid #46086D;
             `
+            checkingAllInputs++
         }
 
         if (emailInput.current.value.length < 12 || emailInput.current.value.endsWith('@gmail.com') === false) {
@@ -132,6 +141,34 @@ export default function ContactFormComponent() {
             emailInput.current.style.cssText = `
                 border: 1px solid #46086D;
             `
+            checkingAllInputs++
+        }
+
+        if ( checkingAllInputs === 3 && pressingTheButton === false) { 
+            let userData = {
+                name: nameInput.current.value,
+                phone: phoneNumberInput.current.value,
+                email: emailInput.current.value,
+            }
+            
+            ApiDataRepository(userData)
+
+            let btnWidth = sendButton.current.offsetWidth
+
+            console.log(btnWidth);
+            console.log("dddddddd");
+            
+            
+
+            sendButton.current.innerHTML = '&#10003;'
+
+            sendButton.current.style.cssText =`
+                    width: ${btnWidth}px;
+                    transition: 0.6s ;
+                    justify-content: center;
+                `
+
+            setPressingTheButton(true)
         }
 
     }
@@ -184,7 +221,7 @@ export default function ContactFormComponent() {
                         </li>
                     </ul> */}
 
-                    <button className='userData__btnWrapper__btn' onClick={() => sendDataInformation()}>
+                    <button className='userData__btnWrapper__btn' onClick={() => sendDataInformation()} ref={sendButton}>
                         Jo’natish
                         <span>
                             <img src={btnArrowImg} alt="" />

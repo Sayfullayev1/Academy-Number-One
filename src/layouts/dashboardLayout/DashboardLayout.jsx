@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./dashboardLayout.css"
 
 import HeaderComponent from "../../components/mainComponents/headerComponent/HeaderComponent"
@@ -12,6 +12,9 @@ import FooterComponent from "../../components/mainComponents/footerComponent/Foo
 
 export default function DashboardLayout() {
 
+  useEffect(() => {
+    document.title = 'Academic Number One'; // Устанавливаем новый заголовок
+  }, []); 
 
   const [headerPosition, setHeaderPosition] = useState(false)
   const [headerHeight, setHeaderHeight] = useState(0)
@@ -36,3 +39,4 @@ export default function DashboardLayout() {
     </div>
   )
 }
+
